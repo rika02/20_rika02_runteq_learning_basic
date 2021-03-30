@@ -30,10 +30,10 @@ module RunteqNormal
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
+end
 
-  config.generators do |g|
-    g.aseets false
-    g.helper false
-    g.test_framework false
-  end
+config.generators do |g|
+  g.aseets false
+  g.helper false
+  g.test_framework false
 end
