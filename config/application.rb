@@ -29,6 +29,7 @@ module RunteqNormal
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
     config.generators do |g|
       g.skip_routes true
       g.assets false
@@ -36,3 +37,4 @@ module RunteqNormal
       g.test_framework false
     end
   end
+end
