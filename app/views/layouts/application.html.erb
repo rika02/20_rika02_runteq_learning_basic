@@ -10,21 +10,12 @@
   </head>
 
   <body>
-
-  <div id="nav">
-    <% if current_user %>
-      <%= render 'shared/header' %>
-      <%= link_to "Edit Profile", edit_user_path(current_user.id) %>
-      <%= link_to "Logout", :logout, method: :post %>
-    <% else %>
-      <%= render 'shared/before_login_header' %>
-    <% end %>
-  </div>
-  <div>
-    <p id="notice"><%= flash[:notice] %></p>
-    <p id="alert"><%= flash[:alert] %></p>
-  </div>
-    <%= yield %>
-    <%= render 'shared/footer' %>
+  <% if logged_in? %>
+    <%= render 'shared/header' %>
+  <% else %>
+    <%= render 'shared/before_login_header' %>
+  <% end %>
+  <%= yield %>
+  <%= render 'shared/footer' %>
   </body>
 </html>

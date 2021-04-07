@@ -36,6 +36,9 @@ gem 'bootstrap', '~> 4.5.3'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'jquery-rails'
 
+gem 'sorcery', '~> 0.16.0'
+gem 'pry-byebug'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker'
@@ -69,3 +72,5 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 gem 'sorcery', '~> 0.16.0'
 
 gem 'pry-byebug'
+
+gem 'rails-i18n'
