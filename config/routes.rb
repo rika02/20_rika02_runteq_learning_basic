@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 =======
 
   get 'login', to: 'user_sessions#new'
-   post 'login', to: 'user_sessions#create'
-   delete 'logout', to: 'user_sessions#destroy'
+  post 'login', to: 'user_sessions#create'
+  delete 'logout', to: 'user_sessions#destroy'
 
   resources :users, only: %i[new create]
 >>>>>>> f71a5e6... Add: i18nの設定の追加
