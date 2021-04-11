@@ -12,23 +12,14 @@
 
 ActiveRecord::Schema.define(version: 2021_04_07_113749) do
 
-  create_table "User", force: :cascade do |t|
-    t.string "email", null: false
-    t.string "crypted_password"
-    t.string "salt"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_User_on_email", unique: true
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "crypted_password"
     t.string "salt"
+    t.string "last_name", null: false
+    t.string "first_name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "last_name"
-    t.string "first_name"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
