@@ -1,8 +1,7 @@
 class BoardsController < ApplicationController
   skip_before_action :require_login
 
-  def new
-  end
+  def new; end
 
   def index
     if logged_in?
