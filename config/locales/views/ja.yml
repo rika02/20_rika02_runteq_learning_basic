@@ -3,6 +3,8 @@ ja:
     login: 'ログイン'
     registration: '登録'
     logout: 'ログアウト'
+    message:
+      require_login: 'ログインしてください'
   users:
     new:
       title: 'ユーザー登録'
@@ -23,7 +25,6 @@ ja:
   boards:
     index:
       title: '掲示板一覧'
-      fail: 'ログインしてください'
       no_board: '掲示板がありません'
     new:
       title: '掲示板作成'
