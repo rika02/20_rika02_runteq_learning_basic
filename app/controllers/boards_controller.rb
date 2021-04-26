@@ -8,11 +8,11 @@ class BoardsController < ApplicationController
   end
 
   def create
-    board = current_user.boards.new(board_params)
-    if board.save
-      redirect_to boards_path, success: t('.success')
+    @board = current_user.boards.new(board_params)
+    if @board.save
+      redirect_to boards_path, success: t('defaults.message.created', item: Board.model_name.human)
     else
-      flash.now[:danger] = t('.fail')
+      flash.now[:danger] = t('defaults.message.not_created', item: Board.model_name.human)
       render :new
     end
   end
