@@ -39,6 +39,11 @@ gem 'jquery-rails'
 gem 'sorcery', '~> 0.16.0'
 gem 'pry-byebug'
 
+gem 'rails-i18n'
+gem 'draper'
+
+gem 'carrierwave', '~> 2.2'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker'
@@ -68,9 +73,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
-
-gem 'rails-i18n'
-
-gem 'draper'
-
-gem 'carrierwave', '~> 2.2'
