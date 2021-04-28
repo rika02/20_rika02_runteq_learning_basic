@@ -1,0 +1,31 @@
+<tbody>
+  <tr id="comment-<%= comment.id %>">
+    <td style="width: 60px">
+      <%= image_tag 'sample.jpg', class: 'rounded-circle', size: '50x50' %>
+    </td>
+    <td>
+      <h3 class="small"><%= comment.user.decorate.full_name %></h3>
+      <div id="js-comment-<%= comment.id %>">
+        <p><%= comment.body %></p>
+      </div>
+      <div style="display: none;">
+        <textarea class="form-control mb-1"></textarea>
+        <button class="btn btn-light">キャンセル</button>
+        <button class="btn btn-success">更新</button>
+      </div>
+    </td>
+
+    <td class="action">
+      <ul class="list-inline justify-content-center" style="float: right;">
+        <% if comment.user == current_user %>
+          <li class="list-inline-item">
+            <a href="#"><i class="fa fa-pen"></i></a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#"><i class="fa fa-trash"></i></a>
+          </li>
+        <% end %>
+      </ul>
+    </td>
+  </tr>
+</tbody>
