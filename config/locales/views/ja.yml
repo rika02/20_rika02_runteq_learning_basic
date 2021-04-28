@@ -31,8 +31,12 @@ ja:
     new:
       title: '掲示板作成'
       create: '作成'
+    show:
+      title: '掲示板詳細'
     bookmark:
       title: 'ブックマーク一覧'
   profiels:
     show:
       title: 'プロフィール'
+  comments:
+      create: '投稿'
