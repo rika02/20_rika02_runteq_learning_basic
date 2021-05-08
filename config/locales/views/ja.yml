@@ -10,7 +10,9 @@ ja:
       updated: '%{item}を更新しました'
       not_updated: '%{item}を更新できませんでした'
       deleted: '%{item}を削除しました'
-      delete?: '削除しますか？'
+      delete_confirm: '削除しますか？'
+      bookmarked: '%{item}しました'
+      delete_bookmarked: '%{item}を外しました'
   users:
     new:
       title: 'ユーザー登録'
@@ -39,8 +41,9 @@ ja:
       title: '掲示板詳細'
     edit:
       title: '掲示板編集'
-    bookmark:
+    bookmarks:
       title: 'ブックマーク一覧'
+      no_bookmark: 'ブックマーク中の掲示板がありません'
   profiels:
     show:
       title: 'プロフィール'
