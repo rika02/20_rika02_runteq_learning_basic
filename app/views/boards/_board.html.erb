@@ -7,7 +7,9 @@
           <%= link_to board.title, board_path(board) %>
         </h4>
         <% if current_user.own?(board) %>
-          <%= render 'crud_menus', board: board %>
+            <%= render 'crud_menus', board: board %>
+        <% else %>
+          <%= render 'bookmark_area', board: board %>
         <% end %>
         <ul class="list-inline">
           <li class="list-inline-item">
@@ -17,6 +19,7 @@
           <li class="list-inline-item">
             <%= icon 'fa', 'calendar' %>
             <%= l board.created_at, format: :long %>
+          </li>
         </ul>
         <p class="card-text"><%= board.body %></p>
       </div>
