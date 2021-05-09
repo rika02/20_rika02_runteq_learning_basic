@@ -1,7 +1,7 @@
 class BoardsController < ApplicationController
   before_action :set_board, only: %i[edit update destroy]
   def index
-    @boards = Board.all.includes(:user).order(created_at: :desc)
+    @boards = Board.all.includes([:user, :bookmarks]).order(created_at: :desc)
   end
 
   def new
