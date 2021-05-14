@@ -23,6 +23,9 @@
          <% else %>
            <p><%= t('.no_bookmark') %></p>
          <% end %>
+         
+<!-- ページネーション -->
+        <%= paginate @bookmarks %>
        </div>
      </div>
    </div>

@@ -36,6 +36,8 @@ gem 'bootstrap', '~> 4.5.3'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'jquery-rails'
 
+gem 'kaminari'
+
 gem 'sorcery', '~> 0.16.0'
 gem 'pry-byebug'
 

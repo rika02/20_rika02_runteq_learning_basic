@@ -23,6 +23,9 @@
         <% else %>
           <p><%= t('.no_board') %></p>
         <% end %>
+
+<!-- ページネーション -->
+        <%= paginate @boards %>
       </div>
     </div>
   </div>
