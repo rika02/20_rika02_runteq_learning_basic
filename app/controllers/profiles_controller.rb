@@ -5,7 +5,6 @@ class ProfilesController < ApplicationController
   def edit; end
 
   def update
-    #binding.pry
     if @user.update(profile_params)
       redirect_to profile_path, success: t('defaults.message.updated', item: User.model_name.human)
     else
@@ -23,5 +22,4 @@ class ProfilesController < ApplicationController
   def profile_params
     params.require(:user).permit(:email, :last_name, :first_name, :avatar)
   end
-
 end
