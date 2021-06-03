@@ -4,6 +4,9 @@ ja:
     registration: '登録'
     logout: 'ログアウト'
     search_keyword: '検索キーワード'
+    edit: '編集'
+    sent: '送信'
+    update: '更新する'
     message:
       require_login: 'ログインしてください'
       created: '%{item}を作成しました'
@@ -14,6 +17,8 @@ ja:
       delete_confirm: '削除しますか？'
       bookmarked: '%{item}しました'
       delete_bookmarked: '%{item}を外しました'
+      reset_password: '%{item}リセット手順を送信しました'
+      changed_password: '%{item}を変更しました'
   users:
     new:
       title: 'ユーザー登録'
@@ -48,9 +53,12 @@ ja:
   profiles:
     show:
       title: 'プロフィール'
-      edit: '編集'
-      name: '氏名'
     edit:
       title: 'プロフィール編集'
   comments:
       create: '投稿'
+  password_resets:
+    new:
+      title: 'パスワードリセット申請'
+    edit:
+      title: 'パスワードリセット'

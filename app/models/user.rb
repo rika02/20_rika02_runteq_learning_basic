@@ -11,6 +11,7 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
 
   validates :email, uniqueness: true, presence: true
+  validates :reset_password_token, presence: true, uniqueness: true, allow_nil: true
   validates :last_name, :first_name, presence: true,
                                      length: { maximum: 255 }
   def own?(object)

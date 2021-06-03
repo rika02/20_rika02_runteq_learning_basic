@@ -36,6 +36,8 @@ gem 'bootstrap', '~> 4.5.3'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'jquery-rails'
 
+gem 'config'
+
 gem 'kaminari'
 
 gem 'sorcery', '~> 0.16.0'
@@ -62,6 +64,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'letter_opener_web', '~> 1.0'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
