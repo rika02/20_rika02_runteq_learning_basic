@@ -5,7 +5,7 @@ class PasswordResetsController < ApplicationController
   def new; end
 
   def create
-    @user = User.find_by_email(params[:email])
+    @user = User.find_by(params[:email])
     @user&.deliver_reset_password_instructions!
     redirect_to login_path, success: t('defaults.message.reset_password', item: User.human_attribute_name('password'))
   end
@@ -22,7 +22,7 @@ class PasswordResetsController < ApplicationController
     end
   end
 
-private
+  private
 
   def set_token_user
     @token = params[:id]
@@ -34,4 +34,3 @@ private
     params.require(:user).permit(:password_confirmation)
   end
 end
-
