@@ -54,6 +54,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'faker'
   gem 'factory_bot_rails'
+    gem 'letter_opener_web', '~> 1.0'
   # 変更しないでください
   gem 'rubocop'
   gem 'rubocop-rails'
@@ -64,7 +65,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'letter_opener_web', '~> 1.0'
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

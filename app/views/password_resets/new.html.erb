@@ -3,13 +3,13 @@
   <div class="row">
     <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <h1><%= t('.title') %></h1>
-      <%= form_with model: @user, url: password_resets_path, local: true, method: :post do |f| %>
+      <%= form_with url: password_resets_path, local: true do |f| %>
         <div class="form-group">
           <%= f.label :email, User.human_attribute_name(:email) %>
           <%= f.email_field :email, class: 'form-control' %>
         </div>
         <div class='text-center'>
-          <%= f.submit (t'defaults.sent'), class: 'btn btn-primary' %>
+          <%= f.submit (t'defaults.submit'), class: 'btn btn-primary' %>
         </div>
       <% end %>
     </div>

@@ -5,7 +5,7 @@ ja:
     logout: 'ログアウト'
     search_keyword: '検索キーワード'
     edit: '編集'
-    sent: '送信'
+    submit: '送信'
     update: '更新する'
     message:
       require_login: 'ログインしてください'
@@ -17,8 +17,6 @@ ja:
       delete_confirm: '削除しますか？'
       bookmarked: '%{item}しました'
       delete_bookmarked: '%{item}を外しました'
-      reset_password: '%{item}リセット手順を送信しました'
-      changed_password: '%{item}を変更しました'
   users:
     new:
       title: 'ユーザー登録'
@@ -62,3 +60,8 @@ ja:
       title: 'パスワードリセット申請'
     edit:
       title: 'パスワードリセット'
+    create:
+      success: 'パスワードリセット手順を送信しました'
+    update:
+      success: 'パスワードを変更しました'
+      fail: 'パスワードの変更に失敗しました'
