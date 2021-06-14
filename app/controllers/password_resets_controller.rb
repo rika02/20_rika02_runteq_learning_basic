@@ -16,10 +16,10 @@ class PasswordResetsController < ApplicationController
 
   def update
     if @user.blank?
-      not_authenticated 
+      not_authenticated
       return
     end
-    
+
     @user.password_confirmation = params[:user][:password_confirmation]
     if @user.change_password(params[:user][:password])
       redirect_to login_path, success: t('.success')
