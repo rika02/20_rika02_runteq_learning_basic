@@ -9,5 +9,4 @@ class Admin::DashboardDecorator < Admin::BaseDecorator
   #       object.created_at.strftime("%a %m/%d/%y")
   #     end
   #   end
-
 end
