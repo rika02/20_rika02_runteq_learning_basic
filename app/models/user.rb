@@ -14,6 +14,7 @@ class User < ApplicationRecord
   validates :reset_password_token, presence: true, uniqueness: { scope: :user }, allow_nil: true
   validates :last_name, :first_name, presence: true,
                                      length: { maximum: 255 }
+  enum role: { general: 0, admin: 1 }
   def own?(object)
     id == object.user_id
   end
